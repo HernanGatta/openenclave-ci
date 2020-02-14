@@ -3,24 +3,24 @@ variable "resource_group_name" {
   default     = "OE-Jenkins-terraform"
 }
 
-variable "dns_name" {
-  description = "Jenkins Master DNS name"
-  default     = "oe-jenkins-tf"
+variable "storage_account_name" {
+  description = "Jenkins agents storage account name"
+  default = "agentsterraform"
 }
 
-variable "private_dns_name" {
+variable "dns_prefix" {
   description = "Jenkins Master DNS name"
-  default     = "oe-jenkins-dev"
+  default     = "oe-jenkins"
 }
 
 variable "location" {
   description = "The location/region where the core network will be created. The full list of Azure regions can be found at https://azure.microsoft.com/regions"
-  default     = "westeurope"
+  default     = "eastus"
 }
 
 variable "vnet_name" {
   description = "Name of the vnet to create"
-  default     = "OE-Jenkins-terraform-test"
+  default     = "OE-Jenkins-terraform"
 }
 
 variable "address_space" {
